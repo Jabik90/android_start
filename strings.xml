@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name = "push_me">Нажми меня</string>
+    <string name = "welcome">Привет, бро</string>
+    <string name = "fst_name">Имя</string>
+    <string name = "snd_name">Фамилия</string>
+</resources>
