@@ -10,30 +10,30 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class List_adapter extends RecyclerView.Adapter<List_adapter.List_ViewHolder>
+public class List_adapter2 extends RecyclerView.Adapter<List_adapter2.List_ViewHolder>
 {
     //объявление списка
-    List<String> names;
+    List<String> boxes;
 
     //передача списка в конструктиор как аргумент
-    public List_adapter(List<String> names)
+    public List_adapter2(List<String> names)
     {
-        this.names = names;
+        this.boxes = boxes;
     }
 
     //т.к. ViewHolder абстрактный, приходится наследовать от него
     public class List_ViewHolder extends RecyclerView.ViewHolder
     {
-        TextView desc;
+        TextView box;
         public List_ViewHolder(View view)
         {
             super(view);
-            desc = view.findViewById(R.id.desc);
+            box = view.findViewById(R.id.box);
         }
 
         public void bind(String data)
         {
-            this.desc.setText(data);
+            this.box.setText(data);
         }
 
     }
@@ -48,12 +48,12 @@ public class List_adapter extends RecyclerView.Adapter<List_adapter.List_ViewHol
 
     @Override
     public void onBindViewHolder(@NonNull List_ViewHolder holder, int position) {
-        holder.bind(names.get(position));
+        holder.bind(boxes.get(position));
     }
 
     @Override
     public int getItemCount()
     {
-        return names.size();
+        return boxes.size();
     }
 }
