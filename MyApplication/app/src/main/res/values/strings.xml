@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="welcome">Привет, добро пожаловать</string>
     <string name="first_name">Имя</string>
     <string name="second_name">Фамилия</string>
-    <string name="button_name">Нажми меня!</string>
-
+    <string name="login_name_str">login@domain</string>
+    <string name="password_str">password</string>
+    <string name="accept_mailbox">Принять</string>
+    <string name="send_to">Кому</string>
+    <string name="copy_to">Копия</string>
+    <string name="theme">Тема</string>
+    <string name="message">Текст сообщения</string>
 </resources>
